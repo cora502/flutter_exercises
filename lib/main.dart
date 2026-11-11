@@ -1,0 +1,22 @@
+import 'package:exercise1/exercises/firstPage.dart';
+import 'package:flutter/material.dart';
+// Points to the new folder
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Tabs Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: FirstPage(), 
+    );
+  }
+}
